@@ -26,8 +26,8 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    //compileSdkVersion flutter.compileSdkVersion
-    compileSdkVersion 31
+    compileSdkVersion flutter.compileSdkVersion
+   // compileSdkVersion 31
    //buildToolsVersion "23.0.1"
    
     compileOptions {
@@ -35,6 +35,9 @@ android {
       targetCompatibility JavaVersion.VERSION_1_8
     }
     
+    jackOptions {
+        enabled true
+    }
     
     kotlinOptions {
         jvmTarget = '1.8'
@@ -47,10 +50,10 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.example.flutter_firebase_test"
-        //minSdkVersion flutter.minSdkVersion
-        //targetSdkVersion flutter.targetSdkVersion
-        minSdkVersion 23
-        targetSdkVersion 31
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion flutter.targetSdkVersion
+       // minSdkVersion 23
+        //stargetSdkVersion 31
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
