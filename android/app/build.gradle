@@ -35,10 +35,7 @@ android {
       targetCompatibility JavaVersion.VERSION_1_8
     }
     
-    jackOptions {
-        enabled true
-    }
-    
+        
     kotlinOptions {
         jvmTarget = '1.8'
     }
