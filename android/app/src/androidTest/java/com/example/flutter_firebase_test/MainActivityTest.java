@@ -4,6 +4,7 @@ import dev.flutter.plugins.integration_test.FlutterTestRunner;
 import org.junit.Rule;
 import org.junit.runner.RunWith;
 // Import MainActivity from YOUR package
+import com.example.flutter_firebase_test.MainActivityTest;
 import com.example.flutter_firebase_test.MainActivity;
 
 @RunWith(FlutterTestRunner.class)
