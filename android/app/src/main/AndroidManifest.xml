@@ -3,7 +3,6 @@
    <application
         android:label="flutter_firebase_test"
         android:name="${applicationName}"
-        tools:node="replace"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
