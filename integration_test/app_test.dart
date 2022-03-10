@@ -25,6 +25,14 @@ void main() {
 
       // final firstcheckbox = find.byType(Checkbox).first;
 
+      // findig the widget
+      var textFind = find.textContaining("Amazing");
+      // checking widget present or not
+      expect(textFind, findsOneWidget);
+
+      var textFind2 = find.textContaining("Happiness");
+      expect(textFind2, findsOneWidget);
+      /*
       final firstcheckbox = find.byType(CheckboxListTile).first;
       expect(
           tester.getSemantics(firstcheckbox),
@@ -50,6 +58,7 @@ void main() {
             // isEnabled: true,
             // isFocusable: false
           ));
+          */
     });
   });
 }
