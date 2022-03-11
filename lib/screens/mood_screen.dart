@@ -19,10 +19,11 @@ class _MoodScreenState extends State<MoodScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
+      /*decoration: const BoxDecoration(
         image: DecorationImage(
-            image: AssetImage("assets/images/Relax.jpg"), fit: BoxFit.cover),
-      ),
+            image: AssetImage("assets/images/Afternoon.jpg"),
+            fit: BoxFit.cover),
+      ),*/
       child: Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(

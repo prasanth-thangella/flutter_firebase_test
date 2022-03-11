@@ -27,7 +27,7 @@ apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
     compileSdkVersion flutter.compileSdkVersion
-   //compileSdkVersion 31
+   // compileSdkVersion 31
    //buildToolsVersion "30.0.3"
    
     compileOptions {
@@ -49,10 +49,12 @@ android {
         applicationId "com.example.flutter_firebase_test"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
-       // minSdkVersion 23
-        //stargetSdkVersion 31
+       // minSdkVersion 16
+       //stargetSdkVersion 31
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+
+      
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         

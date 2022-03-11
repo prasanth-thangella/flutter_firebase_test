@@ -22,12 +22,12 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        /*decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/$timeOfTheDay.jpg"),
+            image: AssetImage("assets/images/Afternoon.jpg"),
             fit: BoxFit.cover,
           ),
-        ),
+        ),*/
         child: Column(
           children: [
             const SizedBox(height: 64),

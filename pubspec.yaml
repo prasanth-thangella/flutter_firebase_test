@@ -27,10 +27,11 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  integration_test:
+    sdk: flutter 
   flutter:
     sdk: flutter
-  integration_test:
-    sdk: flutter
+ 
  
 
 
@@ -39,8 +40,20 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+
+flutter_lints: ^1.0.4
+uses-material-design: true
+
+
+
+
+assets:
+    - assets/images/Afternoon.jpg
+    - assets/images/Evening.jpg
+    - assets/images/Morning.jpg
+    - assets/images/Night.jpg
+    - assets/images/Relax.jpg
+  
 
 
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -48,18 +61,17 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^1.0.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
-flutter:
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
-  uses-material-design: true
+  
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -68,12 +80,7 @@ flutter:
 
   
 
-  assets:
-    - assets/images/Afternoon.jpg
-    - assets/images/Evening.jpg
-    - assets/images/Morning.jpg
-    - assets/images/Night.jpg
-    - assets/images/Relax.jpg
+  
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
