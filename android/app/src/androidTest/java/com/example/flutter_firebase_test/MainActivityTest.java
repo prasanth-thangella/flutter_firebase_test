@@ -1,4 +1,4 @@
-import com.example.flutter_firebase_test;
+package com.example.flutter_firebase_test;
 import androidx.test.rule.ActivityTestRule;
 import dev.flutter.plugins.integration_test.FlutterTestRunner;
 import org.junit.Rule;
